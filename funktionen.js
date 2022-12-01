@@ -1,6 +1,6 @@
 /* DATENSTRUKTUREN */
 
-console.log( "-----------------------------" );
+console.log( "---Primitives--------------------------" );
 /* Primitives */
     // let a // (var) Definition oder Deklaration
     // Wertzuweisung / Assignment
@@ -9,7 +9,7 @@ console.log( "-----------------------------" );
     console.log( typeof a );
     console.log( a );
 
-console.log( "-----------------------------" );
+console.log( "---Arrays--------------------------" );
 /* Arrays */
     // Navigation über INDEX
     /* Array -Info, nicht klausurrelevant*/
@@ -20,7 +20,7 @@ console.log( "-----------------------------" );
     console.log( arr[ 1 ] );
     console.log( arr[ arr.length - 1 ] );
 
-console.log( "-----------------------------" );
+console.log( "---Daten-Objekte--------------------------" );
 /* Daten-Objekte */
     // Navigation über Bezeichner (keys)
     let obj = { x: "Hi", y: 10 };
@@ -39,7 +39,7 @@ console.log( "-----------------------------" );
     console.log( obj.obj1 );
     console.log( obj.obj2.val2 );
 
-console.log( "-----------------------------" );
+console.log( "---DOM--------------------------" );
 /*DOM Document Object Model*/
     console.log( document );
     console.log( document.body );
@@ -50,7 +50,7 @@ console.log( "-----------------------------" );
     console.log( document.getElementById( "test" ) );
     document.getElementById( "test" ).innerHTML = "Hallo Text!"
 
-console.log( "-----------------------------" );
+console.log( "---ENTSCHEIDUNGSSTRUKTUREN--------------------------" );
 /* ENTSCHEIDUNGSSTRUKTUREN | CONTROL FLOW*/
     let cond;
 
@@ -67,32 +67,39 @@ console.log( "-----------------------------" );
         console.log( "Aussage falsch" );
     }
 
- console.log( "-----------------------------" );
+    switch ( cond ) {
+        case true:
+            console.log( "Aussage wahr" );
+            break;
+        case false:
+            console.log( "Aussage falsch" );
+            break;
+        default:
+            console.log( "Aussage nicht conform" );
+            break;
+    }
+
+ console.log( "---FUNKTIONEN--------------------------" );
  /* FUNKTIONEN */
+    // 3. Parameter 
+        console.log( test3( "Robert" ) );               // Argument(e)
+        function test3( firstName ) {                   // Parameter
+            // do something ...
+            return "Hallo, " + firstName;
+        }
 
+    // 4. Fkt-Call aus Funktionen
+        console.log( test4( "Herbert" ) );              // Argument(e)
+        function test4( firstName ) {                   // Parameter
+            return grussformel() + firstName;
+            // return firstName + grussformel() ; 
+        }
+        function grussformel() {
+            return "Hallo, ";
+        }
 
-// 3. Parameter 
-//  console.log(test3("Robert")); // Argument(e)
-//  function test3(firstName) // Parameter
-//  { // do something ...
-//     return "Hallo, " + firstName; 
-// }
+        // rechner();
 
-// 4. Fkt-Call aus Funktionen
-// console.log(test4("Robert")); // Argument(e)
-
-// function test4(firstName) // Parameter
-// { 
-//    return grussformel() + firstName; 
-//    // return firstName + grussformel() ; 
-// }
-
-// function grussformel() {
-//    // return "Hallo, ";
-//     return "Hola, ";
-// }
-
-// rechner();
-
+    console.log( "---Ende--------------------------" );
 
 
