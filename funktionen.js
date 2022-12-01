@@ -1,33 +1,33 @@
 /* DATENSTRUKTUREN */
 
-console.log( "---Primitives--------------------------" );
+console.log( "\u001b[33m---Primitives--------------------------" );
 /* Primitives */
     // let a // (var) Definition oder Deklaration
     // Wertzuweisung / Assignment
     let a;
     a = 10;
-    console.log( typeof a );
-    console.log( a );
+    console.log( "\t\u001b[32m" + typeof a );
+    console.log( "\t\u001b[32m" + a );
 
-console.log( "---Arrays--------------------------" );
+console.log( "\u001b[33m---Arrays--------------------------" );
 /* Arrays */
     // Navigation über INDEX
     /* Array -Info, nicht klausurrelevant*/
     let arr;    // arr = new Array();  // Möglichkeit
     arr = [ "Test1", "Test2", "Test3", "Test4" ];
-    console.log( typeof arr );
-    console.log( arr );
-    console.log( arr[ 1 ] );
-    console.log( arr[ arr.length - 1 ] );
+    console.log( "\t\u001b[32m" + typeof arr );
+    console.log( "\t\u001b[32m" + arr );
+    console.log( "\t\u001b[32m" + arr[ 1 ] );
+    console.log( "\t\u001b[32m" + arr[ arr.length - 1 ] );
 
-console.log( "---Daten-Objekte--------------------------" );
+console.log( "\u001b[33m---Daten-Objekte--------------------------" );
 /* Daten-Objekte */
     // Navigation über Bezeichner (keys)
     let obj = { x: "Hi", y: 10 };
-    console.log( typeof arr );
-    console.log( obj );
-    console.log( obj.x );
-    console.log( obj.y );
+    console.log( "\t\u001b[32m" + typeof arr );
+    console.log( "\t\u001b[32m" + obj );
+    console.log( "\t\u001b[32m" + obj.x );
+    console.log( "\t\u001b[32m" + obj.y );
 
     obj = {             // nested object
         obj1: 10,
@@ -36,21 +36,21 @@ console.log( "---Daten-Objekte--------------------------" );
             val2: "Huhu"
         }
     }
-    console.log( obj.obj1 );
-    console.log( obj.obj2.val2 );
+    console.log( "\t\u001b[32m" + obj.obj1 );
+    console.log( "\t\u001b[32m" + obj.obj2.val2 );
 
-console.log( "---DOM--------------------------" );
+console.log( "\u001b[33m---DOM--------------------------" );
 /*DOM Document Object Model*/
-    console.log( document );
-    console.log( document.body );
-    console.log( document.body.children );
-    console.log( document.body.children[ 0 ] );
-    console.log( document.body.children[ 0 ].innerHTML );
+    console.log( "\t\u001b[32m" + document );
+    console.log( "\t\u001b[32m" + document.body );
+    console.log( "\t\u001b[32m" + document.body.children );
+    console.log( "\t\u001b[32m" + document.body.children[ 0 ] );
+    console.log( "\t\u001b[32m" + document.body.children[ 0 ].innerHTML );
     document.body.children[ 0 ].innerText = "Hi";
-    console.log( document.getElementById( "test" ) );
+    console.log( "\t\u001b[32m" + document.getElementById( "test" ) );
     document.getElementById( "test" ).innerHTML = "Hallo Text!"
 
-console.log( "---ENTSCHEIDUNGSSTRUKTUREN--------------------------" );
+console.log( "\u001b[33m---ENTSCHEIDUNGSSTRUKTUREN--------------------------" );
 /* ENTSCHEIDUNGSSTRUKTUREN | CONTROL FLOW*/
     let cond;
 
@@ -62,35 +62,35 @@ console.log( "---ENTSCHEIDUNGSSTRUKTUREN--------------------------" );
     cond = ( 4 === "4" );     // Test auf Wert UND Typ
 
     if ( cond ) {
-        console.log( "Aussage wahr" );
+        console.log( "\t\u001b[32m" + "Aussage wahr" );
     } else {
-        console.log( "Aussage falsch" );
+        console.log( "\t\u001b[32m" + "Aussage falsch" );
     }
 
     switch ( cond ) {
         case true:
-            console.log( "Aussage wahr" );
+            console.log( "\t\u001b[32m" + "Aussage wahr" );
             break;
         case false:
-            console.log( "Aussage falsch" );
+            console.log( "\t\u001b[32m" + "Aussage falsch" );
             break;
         default:
-            console.log( "Aussage nicht conform" );
+            console.log( "\t\u001b[32m" + "Aussage nicht conform" );
             break;
     }
 
- console.log( "---FUNKTIONEN--------------------------" );
+ console.log( "\u001b[33m---FUNKTIONEN--------------------------" );
  /* FUNKTIONEN */
     // 3. Parameter 
-        console.log( test3( "Robert" ) );               // Argument(e)
-        function test3( firstName ) {                   // Parameter
+        console.log( "\t\u001b[32m" + test3( "Robert" ) );              // Argument(e)
+        function test3( firstName ) {                                   // Parameter
             // do something ...
             return "Hallo, " + firstName;
         }
 
     // 4. Fkt-Call aus Funktionen
-        console.log( test4( "Herbert" ) );              // Argument(e)
-        function test4( firstName ) {                   // Parameter
+        console.log( "\t\u001b[32m" + test4( "Herbert" ) );             // Argument(e)
+        function test4( firstName ) {                                   // Parameter
             return grussformel() + firstName;
             // return firstName + grussformel() ; 
         }
@@ -100,6 +100,4 @@ console.log( "---ENTSCHEIDUNGSSTRUKTUREN--------------------------" );
 
         // rechner();
 
-    console.log( "---Ende--------------------------" );
-
-
+    console.log( "\u001b[33m---Ende--------------------------" );
