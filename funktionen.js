@@ -1,36 +1,74 @@
 /* DATENSTRUKTUREN */
 
+console.log( "-----------------------------" );
 /* Primitives */
+    // let a // (var) Definition oder Deklaration
+    // Wertzuweisung / Assignment
+    let a;
+    a = 10;
+    console.log( typeof a );
+    console.log( a );
 
-// let a // (var) Definition oder Deklaration
-
-// Wertzuweisung / Assignment
-
-
+console.log( "-----------------------------" );
 /* Arrays */
-// Navigation über INDEX
+    // Navigation über INDEX
+    /* Array -Info, nicht klausurrelevant*/
+    let arr;    // arr = new Array();  // Möglichkeit
+    arr = [ "Test1", "Test2", "Test3", "Test4" ];
+    console.log( typeof arr );
+    console.log( arr );
+    console.log( arr[ 1 ] );
+    console.log( arr[ arr.length - 1 ] );
 
-
-
-
-/* Array -Info, nicht klausurrelevant*/
-
-
+console.log( "-----------------------------" );
 /* Daten-Objekte */
-// Navigation über Bezeichner (keys)
+    // Navigation über Bezeichner (keys)
+    let obj = { x: "Hi", y: 10 };
+    console.log( typeof arr );
+    console.log( obj );
+    console.log( obj.x );
+    console.log( obj.y );
 
+    obj = {             // nested object
+        obj1: 10,
+        obj2: {
+            val1: 5,
+            val2: "Huhu"
+        }
+    }
+    console.log( obj.obj1 );
+    console.log( obj.obj2.val2 );
 
+console.log( "-----------------------------" );
+/*DOM Document Object Model*/
+    console.log( document );
+    console.log( document.body );
+    console.log( document.body.children );
+    console.log( document.body.children[ 0 ] );
+    console.log( document.body.children[ 0 ].innerHTML );
+    document.body.children[ 0 ].innerText = "Hi";
+    console.log( document.getElementById( "test" ) );
+    document.getElementById( "test" ).innerHTML = "Hallo Text!"
 
- /*DOM*/
-
-
+console.log( "-----------------------------" );
 /* ENTSCHEIDUNGSSTRUKTUREN | CONTROL FLOW*/
+    let cond;
 
+    cond = true;
+    cond = ( 6 > 4 );
+    cond = ( 6 < 4 );
+    cond = ( 4 != 4 );        // Test auf ungleichem Wert
+    cond = ( 4 == 4 );        // Test auf Wert
+    cond = ( 4 === "4" );     // Test auf Wert UND Typ
 
+    if ( cond ) {
+        console.log( "Aussage wahr" );
+    } else {
+        console.log( "Aussage falsch" );
+    }
 
- //   https://github.com/01-PP/03_Entscheidungsstrukturen
-
-/* FUNKTIONEN */
+ console.log( "-----------------------------" );
+ /* FUNKTIONEN */
 
 
 // 3. Parameter 
